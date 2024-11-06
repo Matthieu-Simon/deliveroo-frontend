@@ -1,4 +1,5 @@
 import "./Card.css";
+import { FaStar } from "react-icons/fa6";
 
 function Card({ meal }) {
     return (
@@ -13,7 +14,7 @@ function Card({ meal }) {
                         <span className="price--card">{meal.price} €</span>
                         {meal.popular && (
                             <span className="popular--card">
-                                Populaire
+                                <FaStar /> Populaire
                             </span>
                         )}
                     </div>

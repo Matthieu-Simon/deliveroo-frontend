@@ -3,7 +3,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .left-content {
     display: flex;

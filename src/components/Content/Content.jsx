@@ -1,4 +1,5 @@
 import Card from "../Card/Card";
+import Cart from "../Cart/Cart";
 import "./Content.css";
 
 function Content({ categories }) {
@@ -19,9 +20,7 @@ function Content({ categories }) {
                         </div>
                     ))}
                 </div>
-                <div className="cart">
-
-                </div>
+                <Cart />
             </div>
         </div>
     )

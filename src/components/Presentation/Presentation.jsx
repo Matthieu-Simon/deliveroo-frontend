@@ -11,7 +11,6 @@ function Presentation({ title, description, image }) {
                 <img className="img--presentation" src={image} alt="Image du restaurant" />
             </div>
         </div>
-        
     )
 }
 
