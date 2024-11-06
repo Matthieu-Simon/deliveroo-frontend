@@ -3,6 +3,7 @@ import axios from "axios";
 import './App.css';
 import Header from "./components/Header/Header";
 import Presentation from "./components/Presentation/Presentation";
+import Content from "./components/Content/Content";
 
 function App() {
   const [data, setData] = useState(null);
@@ -30,7 +31,7 @@ function App() {
         description={data.restaurant.description}
         image={data.restaurant.picture}
       />
-      
+      <Content categories={data.categories} />
     </>
   )
 }

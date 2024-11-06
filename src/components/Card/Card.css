@@ -1,0 +1,62 @@
+.menuCard {
+    min-width: 300px;
+    padding: 0 10px 25px;
+    width: 50%;
+}
+.card {
+    height: 160px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.left--card {
+    flex: 1 1;
+    margin-right: 15px;
+}
+.title--card {
+    font-weight: 400;
+    margin: 0 0 .5rem;
+}
+.description--card {
+    color: #808484;
+    font-size: .9rem;
+    height: 2.6rem;
+    line-height: 1.3rem;
+    margin: 0 0 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.details--card {
+    display: flex;
+    align-items: center;
+}
+.price--card {
+    color: #808484;
+    font-size: 1.1rem;
+}
+.popular--card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FF8000;
+    font-size: .8rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+.right--card {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+}
+.img--card {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
