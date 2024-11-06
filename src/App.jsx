@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import './App.css';
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Presentation from "./components/Presentation/Presentation";
 
 function App() {
   const [data, setData] = useState(null);
@@ -24,7 +25,12 @@ function App() {
   return isLoading ? <span>En cours de chargement...</span> : (
     <>
       <Header />
-      <h2>{data.restaurant.name}</h2>
+      <Presentation 
+        title={data.restaurant.name}
+        description={data.restaurant.description}
+        image={data.restaurant.picture}
+      />
+      
     </>
   )
 }

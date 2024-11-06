@@ -1,0 +1,29 @@
+.presentation {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+.title--presentation {
+    margin-top: .6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2em;
+}
+.description--presentation {
+    color: #868A8A;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.img--presentation {
+    width: 350px;
+    border-radius: 8px;
+}
