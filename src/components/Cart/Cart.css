@@ -1,0 +1,59 @@
+.detail--cart, .resumePrice--cart {
+    border: 2px solid #35B8B2;
+}
+.cart {
+    margin-top: 20px;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #35B8B2;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.btn--cart {
+    width: 100%;
+    padding: 15px;
+    background-color: #35B8B2;
+    color: #fff;
+    border: 2px solid #35B8B2;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .3s ease-in;
+}
+.btn--cart:hover {
+    background-color: #fff;
+    color: #35B8B2;
+}
+.detail--cart {
+    height: 100px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modifyQuantity {
+    color: #35B8B2;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.resumePrice--cart {
+    height: 55px;
+    padding: 8px;
+}
+.detailResumePrice {
+    display: flex;
+    justify-content: space-between;
+}
+.detailResumePrice, .top {
+    margin-bottom: 3px;
+}
+.totalPrice--cart {
+    height: 50px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #35B8B2;
+}
