@@ -2,7 +2,7 @@ import Card from "../Card/Card";
 import Cart from "../Cart/Cart";
 import "./Content.css";
 
-function Content({ categories }) {
+function Content({ categories, cartItems, onAddToCart }) {
     return (
         <div className="content">
             <div className="content--center">
@@ -14,13 +14,13 @@ function Content({ categories }) {
                             <h2 className="menu--title">{categorie.name}</h2>
                             <div className="menuItems--items">
                                 {categorie.meals.map((meal, id) => (
-                                    <Card key={id} meal={meal} />
+                                    <Card key={id} meal={meal} onAddToCart={onAddToCart} cartItems={cartItems} />
                                 ))}
                             </div>
                         </div>
                     ))}
                 </div>
-                <Cart />
+                <Cart cartItems={cartItems} />
             </div>
         </div>
     )

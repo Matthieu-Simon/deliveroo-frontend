@@ -8,30 +8,36 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     border: 2px solid #35B8B2;
     border-radius: 5px;
     background-color: #fff;
 }
 .btn--cart {
-    width: 100%;
-    padding: 15px;
+    padding: 0.5rem 1rem;
     background-color: #35B8B2;
     color: #fff;
     border: 2px solid #35B8B2;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background .3s ease-in;
+    transition: background .3s, color .3s ease-in;
 }
 .btn--cart:hover {
     background-color: #fff;
     color: #35B8B2;
 }
 .detail--cart {
-    height: 100px;
-    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #35B8B2;
+    border-radius: 4px;
+}
+.quantity {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
 }
 .modifyQuantity {
     color: #35B8B2;
@@ -39,8 +45,13 @@
     cursor: pointer;
 }
 .resumePrice--cart {
-    height: 55px;
-    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: .8rem;
+    border: 1px solid #35B8B2;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 .detailResumePrice {
     display: flex;
@@ -50,10 +61,10 @@
     margin-bottom: 3px;
 }
 .totalPrice--cart {
-    height: 50px;
-    padding: 8px;
+    border-top: 2px solid #35B8B2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #35B8B2;
+    padding: 1rem;
+    font-weight: bold;
 }

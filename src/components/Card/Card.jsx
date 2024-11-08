@@ -1,9 +1,9 @@
 import "./Card.css";
 import { FaStar } from "react-icons/fa6";
 
-function Card({ meal }) {
+function Card({ meal, cartItems, onAddToCart }) {
     return (
-        <div className="menuCard">
+        <div className="menuCard" onClick={() => onAddToCart([...cartItems, meal])}>
             <div className="card">
                 <div className="left--card">
                     <h3 className="title--card">{meal.title}</h3>

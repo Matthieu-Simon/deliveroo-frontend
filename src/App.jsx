@@ -8,6 +8,7 @@ import Content from "./components/Content/Content";
 function App() {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +32,11 @@ function App() {
         description={data.restaurant.description}
         image={data.restaurant.picture}
       />
-      <Content categories={data.categories} />
+      <Content 
+        categories={data.categories} 
+        cartItems={cartItems} 
+        onAddToCart={setCartItems} 
+      />
     </>
   )
 }
