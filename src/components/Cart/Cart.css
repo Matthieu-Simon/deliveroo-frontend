@@ -1,9 +1,5 @@
-.detail--cart, .resumePrice--cart {
-    border: 2px solid #35B8B2;
-}
 .cart {
     margin-top: 20px;
-    height: 300px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -12,6 +8,12 @@
     border: 2px solid #35B8B2;
     border-radius: 5px;
     background-color: #fff;
+}
+.empty-cart {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.1rem;
 }
 .btn--cart {
     padding: 0.5rem 1rem;
@@ -26,13 +28,21 @@
     background-color: #fff;
     color: #35B8B2;
 }
+.detail--container {
+    overflow: scroll;
+    max-height: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #35B8B2;
+    border-radius: 4px;
+    padding: 5px;
+}
 .detail--cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border: 1px solid #35B8B2;
-    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
 }
 .quantity {
     display: flex;
